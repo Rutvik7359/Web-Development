@@ -1,0 +1,34 @@
+doctype
+html
+	head
+		title= title
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css")
+		script(defer, src="https://use.fontawesome.com/releases/v5.3.1/js/all.js")
+		link(rel="stylesheet", href="/lab09.css")
+
+	body
+		nav(class="navbar", role="navigation", aria-label="main navigation")
+			div(id="navbarExample", class="navbar-menu")
+				div(class="navbar-start")
+					a(class="navbar-item", href="/") Home
+					a(class="navbar-item", href="/checkUsername") Check Username
+					a(class="navbar-item", href="/help") Help
+
+		div(class="container login")
+			div(class="content")= message
+			form(method="post",class="form-vertical")
+				div(class="field")
+					label(class="label") Username
+					div(class="control has-icons-left has-icons-right")
+						if(result == "init")
+							input(class="input is-dark", name="username", type="username", placeholder="Username")
+						else if(result == "accepted")
+							input(class="input is-success", name="username", type="username", placeholder="Username")
+						else
+							input(class="input is-danger", name="username", type="username", placeholder="Username")
+						span(class="icon is-small is-left")
+							i(class="fas fa-key")
+
+				div(class="field is-grouped")
+					div(class="control")
+						button(class="button is-link") Check

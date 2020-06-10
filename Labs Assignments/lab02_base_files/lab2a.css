@@ -1,0 +1,17 @@
+#column-left{
+    width: 50%;
+    float: left;
+    padding-left: 40px;
+  }
+
+#column-middle{
+    width: 25%;
+    float: left;
+    padding: 40px ;
+}
+#column-right{
+    width: 45%;
+    float: right;
+    padding-right: 40px;
+  }
+  

@@ -1,0 +1,29 @@
+doctype html
+head
+  title
+  link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css')
+  script(defer='', src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+  link(rel='stylesheet', href='public/lab09.css')
+h1.title Your Feedback is Important
+p.subtitle Thanks for getting in touch, we&apos;ll get back to you shortly.
+form(action='/enterUsername', method='GET)
+  .field
+    label.label(for='the_name') Your Name
+    input#the_name.input(type='text', name='name')
+  .field
+    label.label(for='the_email') Email Address
+    input#the_email.input(type='email', name='email')
+  .field
+    label.label Reason for Feedback
+    .control
+      .select
+        select#the_reason.regular-text(name='reason')
+          option Choose One
+          option(value='positive') Positive Feedback
+          option(value='negative') Negative Feedback
+          option(value='suggestion') I have a suggestion
+  .field
+    label.label(for='the_message') Feedback
+    textarea#the_message.textarea(name='message')
+  .field
+    input.button.is-primary(type='submit')

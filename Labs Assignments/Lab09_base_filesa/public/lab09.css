@@ -1,0 +1,15 @@
+form{
+	min-width:320px;
+	width:64%;
+	max-width:40em;
+	margin:10vh auto;
+	padding: none;
+
+}
+
+h1{
+	text-align: center;
+}
+p{
+	text-align: center;
+}

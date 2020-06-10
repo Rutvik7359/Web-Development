@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebGL Example - Cube</title>
+  <script type="text/javascript" src="scripts/MV.js"></script>
+	<script type="text/javascript" src="scripts/utils.js"></script>
+  <script id="vshader" type='x-shader'>
+attribute vec3 position;
+attribute vec4 colour;
+
+varying vec4 vColour;
+
+void main() {
+  vColour = colour;
+  gl_Position = vec4(position, 1.0);
+}
+  </script>
+  <script id="fshader" type='x-shader'>
+precision mediump float;
+
+varying vec4 vColour;
+
+void main() {
+  gl_FragColor = vColour;
+}
+  </script>
+</head>
+<body>
+  <canvas id="canvas" width="500" height="500"></canvas>
+  <script type="text/javascript">
+    var canvas = document.getElementById('canvas');
+    var gl = canvas.getContext('experimental-webgl');
+
+    gl.clearColor(0.25, 0.25, 0.25, 1.0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+
+    var vertexPositions = [
+      vec4(-0.5, -0.5,  0.5, 1.0),
+      vec4(-0.5,  0.5,  0.5, 1.0),
+      vec4( 0.5,  0.5,  0.5, 1.0),
+      vec4( 0.5, -0.5,  0.5, 1.0),
+      vec4(-0.5, -0.5, -0.5, 1.0),
+      vec4(-0.5,  0.5, -0.5, 1.0),
+      vec4( 0.5,  0.5, -0.5, 1.0),
+      vec4( 0.5, -0.5, -0.5, 1.0)
+    ];
+
+    var vertexPositionBuffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, vertexPositionBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertexPositions), gl.STATIC_DRAW);
+
+    var vshader = document.getElementById('vshader');
+    var fshader = document.getElementById('fshader');
+
+    var program = createProgram(vshader.textContent, fshader.textContent);
+    gl.useProgram(program);
+
+    // map the vertex position data to the attribute of the shader
+    program.vertexPosAttrib = gl.getAttribLocation(program, 'position');
+    gl.enableVertexAttribArray(program.vertexPosAttrib);
+    gl.vertexAttribPointer(program.vertexPosAttrib,
+                           3, gl.FLOAT, false, 0, 0);
+
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+  </script>
+</body>
+
+</html>
