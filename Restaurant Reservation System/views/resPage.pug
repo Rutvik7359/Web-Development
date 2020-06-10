@@ -1,0 +1,80 @@
+doctype html
+head
+  title Reserve Now!
+  link(rel="shortcut icon" href="assets/temp_logo.svg")
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css')
+  script(defer='' src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+  link(href="https://fonts.googleapis.com/css?family=Great+Vibes|Kaushan+Script&display=swap" rel="stylesheet")
+  link(type='text/css' rel='stylesheet' href='../styles/styles.css')
+  script(type='text/javascript' src='https://code.jquery.com/jquery-latest.min.js')
+  script(src='../scripts/menu.js' type='text/javascript')
+  //navbar for reservation page
+.block
+  nav.navbar
+    .navbar-start
+      .navbar-item
+        img.nav-item(src='../assets/temp_logo.svg' alt='Restaurant Logo (svg?)')
+      .navbar-item
+        a(href='/') The 6ix Eatery
+      .navbar-menu.is-active
+        a.navbar-item(href='/menu') MENU
+        
+    .navbar-end
+
+  //header and fields for reservation page
+  link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css')
+  script(defer='', src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+  link(rel='stylesheet', href='styles/reservationform.css')
+h1.title Please enter the following details.
+form(method='post')
+  .field
+    label.label(for='first_name') First Name
+    input#the_name.input(type='text', name='firstname' required='isRequired')
+  .field
+    label.label(for='last_name') Last Name
+    input#the_name.input(type='text', name='lastname' required='isRequired')
+  
+  .field
+    label.label Number of guests?
+    .control
+      .select
+        select#no_of_guests.regular-text(name='guests')
+          option(value='1') 1
+          option(value='2') 2
+          option(value='3') 3 
+          option(value='4') 4
+          option(value='5') 5
+          option(value='6') 6 
+          option(value='7') 7
+          option(value='8') 8
+
+  .field
+    label.label(for='the_time') Reservation Time
+    .control
+      .select
+        select#time_slots(name='timeslot')
+          option(value='10:00')  10:00 AM
+          option(value='10:45')  10:45 AM
+          option(value='11:30')  11:30 AM
+          option(value='12:15')  12:15 AM
+          option(value='13:00')  1:00 PM
+          option(value='13:45')  1:45 PM
+          option(value='14:30')  2:30 PM
+          option(value='15:15')  3:15 PM
+          option(value='16:00')  4:00 PM
+          option(value='16:45')  4:45 PM
+          option(value='17:30')  5:30 PM
+          option(value='18:15')  6:15 PM
+          option(value='19:00')  7:00 PM
+          option(value='19:45')  7:45 PM
+          option(value='20:30')  8:30 PM
+
+         
+
+  .field
+    label.label(for='the_tel') Phone Number (###-###-####)
+    input#the_tel.input(type='tel', name='tel' pattern='^\\d{3}-\\d{3}-\\d{4}$' required='isRequired')
+
+  .field
+    input.button.is-primary(type="submit" value="Submit") 
+

@@ -1,0 +1,39 @@
+[
+	{
+		"categoryName": "Pizza",
+		"description": "San Marzano tomato sauce, fresh mozzarella fior di latte, fresh organic basil",
+		"imageURL": "https://cdn.loveandlemons.com/wp-content/uploads/2019/09/margherita-pizza.jpg",
+		"imageAlt": "category 1 picture"
+	},
+	{
+		"categoryName": "Pasta",
+		"description": "Penne pasta with prawns, shrimp and mussels sautéed with spinach, in a white wine cream sauce",
+		"imageURL": "https://www.thespruceeats.com/thmb/-rkiFpKlX2BjHGACrzrprb-pNdI=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/easy-penne-pasta-bake-with-tomatoes-3058843-12_preview-5b2bd0f9119fa80037137e25.jpeg",
+		"imageAlt": "category 2 picture"
+	},
+	{
+		"categoryName": "Wings",
+		"description": "The city of Santiago wishes they’d discovered these very hot & sweet wings first",
+		"imageURL": "https://www.jessicagavin.com/wp-content/uploads/2018/01/crispy-baked-buffalo-wings-7-1200.jpg",
+		"imageAlt": "category 3 picture"
+	},
+	{
+		"categoryName": "Burgers",
+		"description": "Original beef patty, American cheddar, Canadian Bacon, non-sesame seed bun.",
+		"imageURL": "https://heroburgers.com/assets/img/Desktop%20Crop/Home/HeroBurgers_Home_BackAboutUs_Desktop.png",
+		"imageAlt": "category 4 picture"
+	},
+	{
+		"categoryName": "Drinks",
+		"description": "Get refreshed with our special fizzy drink made with gingerale and pure fruit juices",
+		"imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCp3MFRl93aSwzHnOXz00q6EJbxzaIUI8Oq3WcuiqXd6n3Ye3p&usqp=CAU",
+		"imageAlt": "category 5 picture"
+	},
+	{
+		"categoryName": "Desserts",
+		"description": "Enjoy our very own chef's daily treat with the finest of ingredients: Fresh Belgian Chocolates, Fresh Vanilla Icecream.",
+		"imageURL": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80",
+		"imageAlt": "category 6 picture"
+	}
+	
+]

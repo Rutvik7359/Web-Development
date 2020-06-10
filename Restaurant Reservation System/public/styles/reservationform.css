@@ -1,0 +1,33 @@
+/*CSS for full page*/
+html{
+	background-image :url('../assets/images/cn-tower-background.jpg');
+	height: 100% auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*CSS for form*/
+form{
+	min-width:320px;
+	width:64%;
+	max-width:40em;
+	margin:10vh auto;
+	padding: none;
+
+}
+/*CSS for title of form*/
+.title{
+	padding: 1cm;
+	text-align: center;
+	color: white;
+	font-family: 'Kaushan Script', cursive;
+}
+/*CSS for paragraph*/
+p{
+	text-align: center;
+}
+/*CSS for label of button*/
+.label{
+	color: white;
+}

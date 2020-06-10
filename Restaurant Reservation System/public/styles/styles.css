@@ -1,0 +1,388 @@
+/* Chat CSS */
+#chat {
+  position: fixed;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  clear:right;
+}
+
+/* Style the div where all the messages are going to be displayed */
+#chat-box {
+  text-align: left;
+  width: 350px;
+  border: 1px solid black;
+  background-color: white;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+/* Style the div where all the messages are going to be */
+#chat-area {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+/* Generic style for all the messages in the chat */
+.text {
+	border: 1px solid;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: .4rem;
+	box-shadow: 2px 2px;
+	display: inline;
+}
+
+/* Chat style for when the message is long enough to need word wrapping */
+.textwrap {
+	border: 1px solid;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: .4rem;
+	box-shadow: 2px 2px;
+	word-wrap: break-word;
+}
+
+/* Generic style for all the time attributes in the messages */
+.time {
+	font-size: 12px;
+	padding-left: 6px;
+	color: grey;
+}
+
+/* Style the close button */
+.closeBtn {
+  cursor: pointer;
+  right: 0%;
+	padding: 0px 9px;
+	padding-bottom: 7px;
+	transform: translate(2%, -8%);
+	float: right;
+}
+.closeBtn:hover {
+  background-color: #d92e50;
+}
+
+/* Styles the message that the server sends to the cilent */
+#server-message {
+	color: #ff3860;
+	float: right;
+}
+
+/* Style for the time attribute that the sever sends the client */
+#server-time {
+	clear: both;
+	float: right;
+}
+
+/* Style for the messages that the client sends */
+/*#client-message {
+	display:inline;
+}*/
+
+/* Style for the send icon */
+#send-icon {
+	padding-top: 20px;
+	clear:both;
+}
+
+/* Generic spacer of needed */
+.spacer {
+	clear:both;
+}
+
+/* Style of the send button */
+#chat-send-button {
+	text-align: right;
+	float: right;
+}
+
+/* Allows the send button and the input field to be in the same line */
+#input-field-div {
+	display: inline;
+}
+
+/* Style the chat banner */
+#chat-banner {
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding: 2px;
+	background-color: #ff3860;
+}
+
+/* Make the mouse change when hovering over the chat banner */
+#chat-banner:hover {
+	cursor:pointer;
+}
+
+/* Control the color of the menu buttons */
+.categoryLabel {
+	background-color: #ffb223;
+	text-align: center;
+	border-radius: 5px;
+	padding: 7px;
+}
+
+/* Control the alignment of the menu buttons */
+.contentCell {
+	padding-top: 20px;
+}
+.buttonCell {
+	vertical-align: bottom;
+}
+
+/* Space out the cells in the table */
+#categories {
+  border-spacing: 20px;
+  border-collapse: separate;
+}
+
+.card.large {
+	height: 450px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* parallax scrolling effect */
+.parallax{
+	background-image :url('../assets/images/cn-tower-background.jpg');
+	height: 100% auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+/* Block Master CSS */
+.info-blocks {
+	height: 500px;
+	margin-top: 300px;
+	margin-bottom: 300px;
+	text-align: center;
+
+}
+
+/* Menu BLock CSS */
+#menu-block {
+	background-image: url('../assets/images/food.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Menu Block Title */
+#menu-title {
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	position: relative;
+	color: white;
+	font-size: 100px;
+	top: 25%;
+}
+
+/* Menu Block Description */
+#menu-description {
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	position: relative;
+	color: white;
+	font-size: 40px;
+	top: 26%;
+}
+/* Menu Block Button Css */
+#menu-block-button {
+	text-align: center;
+	position: relative;
+	bottom: -175px
+
+}
+
+/* Reservation BLock CSS */
+#reservation-block {
+	background-image: url('../assets/images/dining2.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Reservation Block Title */
+#reservation-title {
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	position: relative;
+	color: white;
+	font-size: 100px;
+	top: 25%;
+}
+
+/* Reservation Block Description */
+#reservation-description {
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	position: relative;
+	color: white;
+	font-size: 40px;
+	top: 26%;
+}
+/* Reservation Block Button Css */
+#reservation-block-button {
+	text-align: center;
+	position: relative;
+	bottom: -175px
+}
+
+/* Contact Us BLock CSS */
+#contact-us-block {
+	background-image: url('../assets/images/waiter.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Contact-Us Block Title */
+#contact-us-title {
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	position: relative;
+	color: white;
+	font-size: 100px;
+	top: 25%;
+}
+
+/* Contact-Us Block Description */
+#contact-us-description {
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	position: relative;
+	color: white;
+	font-size: 40px;
+	top: 26%;
+}
+/* Contact-Us Block Button Css */
+#contact-us-block-button {
+	text-align: center;
+	position: relative;
+	bottom: -175px
+}
+
+/* Social Media BLock CSS */
+#social-media-block {
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	height: 200px;
+}
+
+
+
+/* Social-Media Block Title */
+#social-media-title {
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	position: relative;
+	color: white;
+	font-size: 25px;
+	top: 25%;
+}
+
+/* List of Social Media */
+#social-media-list {
+	list-style: none;
+	padding-top: 5rem;
+	width: 100%;
+
+}
+#social-media-list li {
+	display: inline;
+	padding: 20px;
+	margin: 2;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+/*	text-align: center;
+	position: relative;*/
+	height: 50px;
+	width: 50px;
+}
+/*Review Us Block CSS*/
+#review-us-block {
+	background-image: url('../assets/images/cook.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* review-Us Block Title */
+#review-us-title {
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	position: relative;
+	color: white;
+	font-size: 100px;
+	top: 25%;
+}
+
+/* Contact-Us Block Description */
+#review-us-description {
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	position: relative;
+	color: white;
+	font-size: 40px;
+	top: 26%;
+}
+/* Contact-Us Block Button Css */
+#review-us-block-button {
+	text-align: center;
+	position: relative;
+	bottom: -175px;
+}
+
+/*Menu image CSS*/
+.image img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+    width:  200px;
+    height: 250px;
+	background-size: cover;
+	padding-top: 1cm;
+	}
+/*CSS for header description on menu page*/
+h1 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 100px;
+	text-align: center;
+	color: white;
+	padding: 2cm;
+  }
+
+/*CSS for menu.html background*/
+#menubackground {
+	background-image :url('../assets/images/cn-tower-background.jpg');
+	height: 100% auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+/*CSS for social media text below icons*/
+#social-media-list a{
+	color: white;
+}
+
+/*The 6ix Eatery name in specific blue colour to match the rest of the pages*/
+p{
+	color: #3273dc
+}
+
+
+

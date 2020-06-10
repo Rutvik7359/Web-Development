@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="25.261868mm"
+   height="25.261868mm"
+   viewBox="0 0 25.261868 25.261868"
+   version="1.1"
+   id="svg1171"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="temp_logo.svg">
+  <defs
+     id="defs1165" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.7008812"
+     inkscape:cx="31.068367"
+     inkscape:cy="46.667965"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1304"
+     inkscape:window-height="745"
+     inkscape:window-x="54"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-global="false"
+     showguides="false" />
+  <metadata
+     id="metadata1168">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-271.73815)">
+    <circle
+       style="fill:#ffea00;fill-opacity:1;stroke:none;stroke-width:1.2402972;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5844-4"
+       cx="12.630934"
+       cy="284.36908"
+       r="12.630934"
+       inkscape:export-filename="C:\Users\luket\Desktop\UI Idea.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.10953701;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 16.00489,284.20755 c 0,0 -1.737861,8.06036 0.979729,8.08448 2.717513,0.0233 1.125443,-8.08448 1.125443,-8.08448 0,0 1.721567,-2.00113 1.49322,-3.63641 -0.228115,-1.63529 -0.813919,-3.56107 -2.4887,-3.58257 -1.67478,-0.0233 -2.452697,1.91322 -2.694778,3.58257 -0.242081,1.66935 1.585086,3.63641 1.585086,3.63641 z"
+       id="path5842-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czczzzc"
+       inkscape:export-filename="C:\Users\luket\Desktop\UI Idea.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 5.6454637,278.26262 c 0.4697364,-0.86181 1.2122161,-0.62346 1.2122161,-0.62346 0,0 -0.2110429,5.29143 -0.034635,5.50692 0.1764079,0.21549 0.7273295,0.13854 0.7273295,0.13854 0,0 0.071199,-4.05094 0.3809823,-4.71033 0.3097829,-0.65938 0.9118515,-0.60989 1.212216,-0.13857 0.3003645,0.47132 0.3463476,4.81423 0.3463476,4.81423 0,0 0.4391542,0.0507 0.7273298,-0.27708 0.288176,-0.32779 0,-5.26448 0,-5.26448 0,0 0.426186,-0.22189 1.039043,0.38098 0.612858,0.60287 0.632427,5.05998 0.173174,5.81863 -0.459252,0.75865 -1.6971026,0.83124 -1.6971026,0.83124 0,0 0.4673986,6.87942 -0.034635,7.48111 -0.502034,0.60169 -1.8734179,0.73689 -2.4244328,0 -0.5510149,-0.73689 -0.069269,-7.51574 -0.069269,-7.51574 0,0 -1.0255589,-0.18266 -1.6278331,-1.00442 -0.6022741,-0.82176 -0.4004671,-4.57576 0.069269,-5.43757 z"
+       id="path819"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="zczczzczczzczzczz" />
+  </g>
+</svg>

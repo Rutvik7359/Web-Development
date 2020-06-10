@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head id="head">
+    <title>The 6ix Eatery </title>
+    <link rel="shortcut icon" href="assets/temp_logo.svg"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+      <link type="text/css" rel="stylesheet" href="styles/styles.css" />
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Kaushan+Script&display=swap" rel="stylesheet"> 
+      <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="scripts/homepage.js" type="text/javascript"></script>
+    <script type="text/javascript" src="socketio/socket.io.js"></script>
+    <script> var socket = io(); </script>
+  </head>
+  <body id = "homepage-body" class = "parallax">
+    <!-- Navigation bar goes here -->
+    <div class="block">
+      <nav class="navbar">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <img src="assets/temp_logo.svg" alt="Restaurant Logo" class="nav-item">
+          </div>
+          <div class="navbar-item">
+            <p>The 6ix Eatery</p>
+          </div>
+          <div class="navbar-menu is-active">
+            <a href="pages/menu.html" class="navbar-item">MENU</a>
+            <a href="customerReservation" class="navbar-item">RESERVE A TABLE</a>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a href="login" class="button is-link is-danger">Log in</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+	 <!-- Parallax style -->
+	<!-- <div class = "parallax"></div> -->
+
+<!-- First Information Block (Menu) -->
+	<div id = "menu-block" class = "info-blocks">
+		<p id = "menu-title"> 
+			Menu
+		</p>
+		<p id = "menu-description">
+			Come check out our diverse menu!
+		</p>
+		<button id = "menu-block-button" class="button is-rounded is-medium is-danger" type="button" onclick="window.location.href='menu';">View Menu</button>
+	</div>
+<!--   <div id = "gap"></div> -->
+
+  <!-- First Information Block (Menu) -->
+  <div id = "reservation-block" class = "info-blocks">
+    <p id = "reservation-title"> 
+      Reservation
+    </p>
+    <p id = "reservation-description">
+      Make a reservation today!
+    </p>
+    <button id = "reservation-block-button" class="button is-rounded is-medium is-danger" type="button" onclick="window.location.href='customerReservation';">Reserve A Table </button>
+  </div>
+
+  <!-- First Information Block (Menu) -->
+  <div id = "contact-us-block" class = "info-blocks">
+    <p id = "contact-us-title"> 
+      Contact Us 
+    </p>
+    <p id = "contact-us-description">
+      Have any questions? Ask us!
+    </p>
+    <button id = "contact-us-block-button" class="button is-rounded is-medium is-danger" type="button">Contact Us Now</button>
+  </div>
+
+  <!-- First Information Block (Menu) -->
+  <div id = "review-us-block" class = "info-blocks">
+    <p id = "review-us-title"> 
+      Review Us 
+    </p>
+    <p id = "review-us-description">
+      Have you been to our Restaurant? Leave a review!
+    </p>
+    <button id = "review-us-block-button" class="button is-rounded is-medium is-danger" type="button" onclick="window.location.href='customerReview';">Review Us Now</button>
+  </div>
+
+  <!-- Social Media --> 
+    <div id = "social-media-block">
+    <p id = "social-media-title"> 
+      STAY CONNECTED 
+    </p>
+    <ul id = "social-media-list">
+      <a href = "https://www.facebook.com/The6ixEatery/">
+      <li><img src = "assets/icons/facebook.png" class = "social-media-icons">Facebook</li>
+      </a>
+      <a href = "https://www.instagram.com/the6ixeatery_/">
+      <li><img src = "assets/icons/instagram.png" class = "social-media-icons">Instagram</li>
+      </a>
+      <a href="mailto:the6ixEatery@gmail.com">
+      <li><img src="assets/icons/gmail.png" class = "social-media-icons">E-mail Us!<li>
+      </a>
+    </ul>
+  </div>
+
+<!-- Live chat --> 
+    <div id="chat" hidden>
+      <div id="chat-banner">Live Chat<span class="closeBtn">x</span></div>
+      <div id="chat-box">
+        <div id="chat-area"> </div>
+        <input id="message-input" type="text">
+        <div id="input-field-div">
+          <button class="button is-danger" id="chat-send-button">Send</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

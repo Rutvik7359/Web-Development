@@ -1,0 +1,28 @@
+/* CSS for the div that contains the box */
+#box-display {
+	padding-top: 10%;
+	text-align: center;
+	height: 700px;
+	width: 1100px;
+	text-align: center;
+	margin: auto;
+}
+
+/* CSS for the title inside the box */
+#chart-title {
+	font-size: 25px;
+}
+
+/* CSS for the bckground image */
+html {
+	background-image: url('../assets/images/cn-tower-background.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Style for the title */
+p {
+	font-family: 'Kaushan Script', cursive;
+}

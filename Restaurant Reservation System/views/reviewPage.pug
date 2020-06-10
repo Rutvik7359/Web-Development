@@ -1,0 +1,42 @@
+doctype html
+head
+  title Review Us!
+  link(rel="shortcut icon" href="assets/temp_logo.svg")
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css')
+  script(defer='' src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+  link(type='text/css' rel='stylesheet' href='../styles/styles.css')
+  link(href="https://fonts.googleapis.com/css?family=Great+Vibes|Kaushan+Script&display=swap" rel="stylesheet")
+  script(type='text/javascript' src='https://code.jquery.com/jquery-latest.min.js')
+  script(src='../scripts/menu.js' type='text/javascript')
+  //navbar for review us page
+.block
+  include navbar.pug
+  //header and fields for review us page
+  link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css')
+  script(defer='', src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+  link(rel='stylesheet', href='styles/reviewform.css')
+h1.title Your Feedback is Important to us. Please let us know how we did.
+//when form is submitted it redirects user to home page and resets the form 
+form(method='get', onsubmit="reset()", action="/")    
+  .field
+    label.label(for='the_name') Your Name
+    input#the_name.input(type='text', name='name')
+  .field
+    label.label(for='the_email') Email Address
+    input#the_email.input(type='email', name='email')
+  .field
+    label.label Reason for Feedback
+    .control
+      .select
+        select#the_reason.regular-text(name='reason')
+          option Choose One
+          option(value='positive') Positive Feedback
+          option(value='negative') Negative Feedback
+          option(value='suggestion') I have a suggestion
+  .field
+    label.label(for='the_message') Feedback
+    textarea#the_message.textarea(name='message')
+  .field
+    //when submitted an alert message will appear and customer will be redirected to home page with a delay
+    input.button.is-primary(type="submit" value="Submit" onclick="alert('We have received your review. Thankyou!') & setTimeout(10000)")
+

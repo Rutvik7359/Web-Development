@@ -1,0 +1,47 @@
+doctype html
+head
+  title Login - The 6ix Eatery
+  link(rel="shortcut icon" href="assets/temp_logo.svg")
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css')
+  script(defer='' src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+  link(type='text/css' rel='stylesheet' href='../styles/styles.css')
+  script(type='text/javascript' src='https://code.jquery.com/jquery-latest.min.js')
+.block
+  include navbar.pug
+
+  link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css')
+  script(defer='', src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+  link(rel='stylesheet', href='styles/reviewform.css')
+h1.title Login
+form(method='post')
+  .field
+    label.label(for='the_name') Username
+    if (usernameStatus == 'bad')
+      input#the_name.input(
+        type='text', 
+        name='username',
+        style='border: 2px solid red')
+      div(
+        class='content', 
+        style='color: red')= usernameError
+    else
+      input#the_name.input(
+        type='text', 
+        name='username')
+  .field
+    label.label(for='the_password') Password
+    if (passwordStatus == 'bad')
+      input#the_password.input(
+        type='password', 
+        name='password',
+        style='border: 2px solid red')
+      div(
+        class='content', 
+        style='color: red')= passwordError
+    else
+      input#the_password.input(
+        type='password', 
+        name='password')
+  .field
+    input.button.is-primary(type="submit" value="Submit")
+
